@@ -1,5 +1,23 @@
-info:
-  description: Spring Cloud COnfig
-  url: https://github.com/jaydattdesai/Spring-cloud-config
-foo: application default
+server:
+  port: 8181
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
 
+
+# give the application a name
+spring:
+  application:
+    name: file-download-service
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+    
+    
+  jpa:
+    generate-ddl: true
+    
