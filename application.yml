@@ -1,9 +1,9 @@
 server:
-  port: 8080
+  port: 0
 eureka:
   client:
     serviceUrl:
-      defaultZone: https://ms-discovery-server.cfapps.io/eureka/
+      defaultZone: http://localhost:8761/eureka/
 
 spring:
   datasource:
