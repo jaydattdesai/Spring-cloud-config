@@ -3,7 +3,7 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: https://ms-discovery-server.cfapps.io/eureka/
 
 spring:
   datasource:
